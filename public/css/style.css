@@ -1,0 +1,11 @@
+#container {
+    width: 500px;
+    height: 800px;
+    background-color: blue;
+}
+
+.pgdoll {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+}
