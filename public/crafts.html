@@ -51,13 +51,13 @@
                     <p class="panel-text">This is your expanded text!</p>
                 </div>
                 <div id="sectcrft2" class="panel">
-                    <img src="../public/img/beba.png">
+                    <img id="sectim2" src="../public/img/beba.png">
                 </div>
                 <div id="sectcrft3" class="panel">
-                    <img src="../public/img/vine.png">
+                    <img id="sectim3" src="../public/img/vine.png">
                 </div>
                 <div id="sectcrft4" class="panel">
-                    <img src="../public/img/chla.png">
+                    <img id="sectim4" src="../public/img/chla.png">
                 </div>
               
             </div>
@@ -73,6 +73,24 @@
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('sectim').onclick = function() {
                 document.getElementById('sectcrft').classList.toggle('expanded');
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('sectim2').onclick = function() {
+                document.getElementById('sectcrft2').classList.toggle('expanded');
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('sectim3').onclick = function() {
+                document.getElementById('sectcrft3').classList.toggle('expanded');
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('sectim4').onclick = function() {
+                document.getElementById('sectcrft4').classList.toggle('expanded');
             }
         });
     </script>
