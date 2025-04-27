@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/crafts.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+   
+
+    <title>dreamysin's site!!</title>
+  </head>
+  <body>
+    <div id="container">
+        <div id="ct">
+        <div id="header">
+
+        </div>
+        <div id="content">
+            <div id="left">
+              <div class = "box16" > 
+                <div class = "box-top" > 
+                  <div class = "u01" ></div>
+                </div> <div class = "box-center" >
+                   <div class = "box-inner" > 
+                    <a href="index.html"><button class="nav"><img src="img/ns.gif">HOME</button></a>
+                    <a href="#"><button class="nav"><img src="img/ns.gif">ABOUT</button></a>
+                    <a href="cats.html"><button class="nav"><img src="img/ns.gif">CATS</button></a>
+                    <a href="#"><button class="nav"><img src="img/ns.gif">DIARY</button></a>
+                    <a href="#"><button class="nav"><img src="img/ns.gif">SCRAPBOOK</button></a>
+                    <a href="#"><button class="nav"><img src="img/ns.gif">CRAFTS</button></a>
+                    <a href="#"><button class="nav"><img src="img/ns.gif">ART</button></a>
+                    <a href="#"><button class="nav"><img src="img/ns.gif">SPELLS</button></a>
+                    <a href="#"><button class="nav"><img src="img/ns.gif">PIXEL DOLLS</button></a>
+                    
+                    
+                </div> 
+              </div> 
+              <div class = "box-bottom" > 
+                <div class = "s01" ></div> 
+              </div> 
+            </div>
+            </div>
+            <div id="right">
+              <div id="pan1">
+                <div id="sectcrft" class="panel">
+                    <img id="sectim" src="../public/img/band.png">
+                    <p class="panel-text">This is your expanded text!</p>
+                </div>
+                <div id="sectcrft2" class="panel">
+                    <img src="../public/img/beba.png">
+                </div>
+                <div id="sectcrft3" class="panel">
+                    <img src="../public/img/vine.png">
+                </div>
+                <div id="sectcrft4" class="panel">
+                    <img src="../public/img/chla.png">
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="doll">
+        <img src="img/avi.png" class="pgdoll">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('sectim').onclick = function() {
+                document.getElementById('sectcrft').classList.toggle('expanded');
+            }
+        });
+    </script>
+  </body>
+</html>
