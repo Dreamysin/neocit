@@ -15,12 +15,17 @@ body {
   font-family: "Indie Flower", cursive;
   line-height: 1.6;
   color: var(--fourth-color);
+  background-color: #6bb1ad;
+  background-image: url('../img/bgmaybe.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 :root {
   --primary-color: white;
-  --secondary-color: #e5a9a9;
-  --third-color: #6bb1ad;
+  --secondary-color: rgb(251, 244, 245);
+  --third-color: rgb(246, 179, 218);
   --fourth-color: #181a18;
   --fifth-color: #e6748e;
   --main-font: "Fuzzy Bubbles", sans-serif;
@@ -29,20 +34,70 @@ body {
   --headers: rgb(174, 102, 189);
 }
 
+.line {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.line div {
+    height: 2px;
+    background-color: rgb(128, 190, 245);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.navdivider {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(27, 108, 33);
+}
+
+.home ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.home ul li a {
+    text-decoration: none;
+    color: rgb(205, 133, 175);
+    font-size: 20px;
+}
+
+.navdivider div {
+    height: 2px;
+    background-color: var(--third-color);
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.nav p {
+    font-size: 20px;
+    color: rgb(205, 133, 175);
+}
+
 .main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #6bb1ad;
+    
 }
 
 .maincont {
     
     margin: auto;
-    background-color: #e5a9a9;
+    background-image: url("../img/x16-bg-checked.gif");
     width: 98%;
     align-items: center;
-    
+    border: double 5px rgb(17, 60, 16);
 }
 
 .cont {
@@ -53,14 +108,32 @@ body {
     "stamp stamp stamp"
     "sidebar1 main2 sidebar2"
     "footer footer footer"
-    / 140px 1fr 140px;
+    / 140px 1fr 190px;
     padding: 20px;
+}
+
+.siteheader img {
+    height: 120px;
+    width: auto;
+    margin: 0;
+}
+
+.siteheader {
+    margin: 20px 0 10px 0;
+    padding: 0;
+    height: 120px;
+    text-align: center;
 }
 
 .header {
     grid-area: header;
     background-color: green;
-    height: 150px
+    height: 150px;
+    background-image: url('../img/header1.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: dashed 2px var(--third-color);
 }
 
 .side1 {
@@ -69,22 +142,125 @@ body {
     height: 20px;
 }
 
+.nav {
+    text-align: center;
+    background-color: rgb(148, 254, 139);
+    padding: 10px 0;
+    border: dashed 2px var(--third-color);
+}
+
 .marquee {
     grid-area: stamp;
-    height: 20px;
-    background-color: blue;
+    height: auto;
+    
+    
+}
+
+marquee {
+    margin: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .main2 {
     grid-area: main2;
-    height: 20px;
-    background-color: green;
+    height: auto;
+    
+}
+
+.mid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 
+    "mainmid"
+    "blink"
+    "updates"
+    / 1fr;
+    padding: 0px;
+}
+
+.mainmid {
+    grid-area: mainmid;
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: dotted 2px var(--third-color);
+}
+
+.mainmid img {
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+}
+
+
+
+
+.mainimgcont {
+    display: flex;
+}
+
+.blink {
+    grid-area: blink;
+    
+    height: auto;
+}
+
+.blink img {
+    height: 25px;
+    width: auto;
+}
+
+.updates {
+    grid-area: updates;
+    background-color: rgb(251, 244, 245);
+    height: auto;
+    border: dotted 2px var(--third-color);
+}
+
+.updcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 10px;
+}
+
+.updatecont {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .side2 {
     grid-area: sidebar2;
-    height: 20px;
-    background-color: red;
+    height: auto;
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 
+    "widget"
+    "cliques"
+    / 1fr;
+}
+
+.widget {
+    grid-area: widget;
+}
+
+.clique {
+    grid-area: cliques;
+    background-color: white;
+    height: 160px;
+    text-align: center;
+    padding: 5px;
+    border: dotted 2px var(--third-color);
 }
 
 .footer {
@@ -97,7 +273,7 @@ body {
 
 
 .box21 {
-    margin : 20px auto;
+    margin : 0px auto;
     width: 900px; 
     height: auto;
 } 
